@@ -1,0 +1,13 @@
+{
+    "meta": {
+        "format": "1"
+    },
+    "steps": "",
+    "ui": "",
+    "connections": [
+        {
+            "source": "Gauss Input 34.Gauss input",
+            "target": "Neural Field 34.input"
+        }
+    ]
+}

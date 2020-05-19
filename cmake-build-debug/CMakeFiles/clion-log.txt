@@ -1,0 +1,161 @@
+/snap/clion/112/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/work/CLionProjects/cedar
+CMake Warning (dev) in CMakeLists.txt:
+  No project() command is present.  The top-level CMakeLists.txt file must
+  contain a literal, direct call to the project() command.  Add a line of
+  code such as
+
+    project(ProjectName)
+
+  near the top of the file, but after cmake_minimum_required().
+
+  CMake is pretending there is a "project(Project)" command on the first
+  line.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- The C compiler identification is GNU 7.5.0
+-- The CXX compiler identification is GNU 7.5.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- including /home/work/CLionProjects/cedar/cedar.conf configuration file
+-- Building in "RELEASE" mode.
+-- Will compile despite missing libraries.
+-- Searching for Qt...
+-- looking for Qt5...
+   Qt5Widgets was found in /opt/qt512/include/;/opt/qt512/include/QtWidgets;/opt/qt512/include/QtGui;/opt/qt512/include/QtCore;/opt/qt512/.//mkspecs/linux-g++;/usr/include
+-- QT5 was found
+-- QT5 Plots may be used
+-- Thus QWT and QWTPlot3D Plotting libraries might be disabled!
+-- Searching for boost...
+-- Found Boost: /usr/include (found suitable version "1.65.1", minimum required is "1.40.0") found components: system date_time filesystem regex 
+-- Searching for OpenCV...
+   OpenCV 3 was found in /usr/include;/usr/include/opencv
+CMake Warning (dev) at /snap/clion/112/bin/cmake/linux/share/cmake-3.16/Modules/FindOpenGL.cmake:275 (message):
+  Policy CMP0072 is not set: FindOpenGL prefers GLVND by default when
+  available.  Run "cmake --help-policy CMP0072" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+  FindOpenGL found both a legacy GL library:
+
+    OPENGL_gl_LIBRARY: /usr/lib/x86_64-linux-gnu/libGL.so
+
+  and GLVND libraries for OpenGL and GLX:
+
+    OPENGL_opengl_LIBRARY: /usr/lib/x86_64-linux-gnu/libOpenGL.so
+    OPENGL_glx_LIBRARY: /usr/lib/x86_64-linux-gnu/libGLX.so
+
+  OpenGL_GL_PREFERENCE has not been set to "GLVND" or "LEGACY", so for
+  compatibility with CMake 3.10 and below the legacy GL library will be used.
+Call Stack (most recent call first):
+  cmake/libraries.txt:164 (find_package)
+  CMakeLists.txt:68 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Searching for QGLViewer...
+-- QGLViewer not found.
+-- Searching for GLEW...
+-- GLEW not found.
+-- FFTW was found.
+-- Looking for YARP packages - not found
+-- Kuka Fast Research Interface not found
+-- libdc1394 firewire Interface found
+-- Building without amtec support.
+-- PCL library not found
+CMake Warning at cmake/libraries.txt:339 (find_package):
+  By not providing "FindEigen3.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "Eigen3", but
+  CMake did not find one.
+
+  Could not find a package configuration file provided by "Eigen3" with any
+  of the following names:
+
+    Eigen3Config.cmake
+    eigen3-config.cmake
+
+  Add the installation prefix of "Eigen3" to CMAKE_PREFIX_PATH or set
+  "Eigen3_DIR" to a directory containing one of the above files.  If "Eigen3"
+  provides a separate development package or SDK, be sure it has been
+  installed.
+Call Stack (most recent call first):
+  CMakeLists.txt:68 (include)
+
+
+-- Eigen3 library not found
+-- configuring tests
+-- Skipping AmtecSpeedControl test.
+-- Skipping netPerformance test.
+-- Skipping AmtecKinematicChain
+-- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) 
+
+============================================================
+ Configuration
+============================================================
+
+
+------------------------------------------------------------
+ Mandatory Libraries
+------------------------------------------------------------
+
+  Qt ................................................. Yes
+  Boost .............................................. Yes
+  OpenCV ............................................. Yes
+
+
+------------------------------------------------------------
+ Optional Libraries
+------------------------------------------------------------
+
+-- Plot Libraries ------------------------------------------
+
+  Qt5 Charts and Data Visualisation .................. Yes
+
+-- Misc. Libraries -----------------------------------------
+
+  GLEW ................................................ No
+  QGLViewer ........................................... No
+  FFTW (multi-threaded) .............................. Yes
+  Yarp ................................................ No
+  PCL ................................................. No
+  Eigen3 .............................................. No
+  Python .............................................. No
+
+-- Hardware APIs -------------------------------------------
+
+  LibDC1394 .......................................... Yes
+  FRI ................................................. No
+  Amtec ............................................... No
+
+
+------------------------------------------------------------
+ Documentation
+------------------------------------------------------------
+
+  Doxygen ............................................. No
+
+
+------------------------------------------------------------
+ Installation prefix
+------------------------------------------------------------
+
+  /usr/local
+
+------------------------------------------------------------
+ Issues (check these if you have problems compiling cedar)
+------------------------------------------------------------
+
+  none
+
+============================================================
+
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/work/CLionProjects/cedar/cmake-build-debug
