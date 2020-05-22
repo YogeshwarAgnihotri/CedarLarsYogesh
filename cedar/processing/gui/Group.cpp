@@ -2998,7 +2998,6 @@ void cedar::proc::gui::Group::readView(const cedar::aux::ConfigurationNode &node
 
 void cedar::proc::gui::Group::readConnections(const cedar::aux::ConfigurationNode &node)
 {
-
   std::vector<cedar::proc::gui::Connection*> cs; // all gui connections in the scene
 
   QList<QGraphicsItem *> items = this->mpScene->items();
