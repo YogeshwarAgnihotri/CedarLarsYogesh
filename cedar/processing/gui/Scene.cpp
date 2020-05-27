@@ -271,6 +271,17 @@ void cedar::proc::gui::Scene::deleteElements(QList<QGraphicsItem*>& items, bool 
       items[i] = nullptr;
     }
   }
+  // remove sticky notes
+  for (int i = 0; i < items.size(); ++i)
+  {
+    // delete connections first
+    if (auto p_stickynote = dynamic_cast<cedar::proc::gui::StickyNote*>(items[i]))
+    {
+      removeStickyNote(p_stickynote);
+      // take connections out of the list of graphic elements
+      items[i] = nullptr;
+    }
+  }
   std::vector<cedar::proc::gui::GraphicsBase*> delete_stack;
   // fill stack with elements
   for (int i = 0; i < items.size(); ++i)
